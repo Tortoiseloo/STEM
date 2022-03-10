@@ -1,0 +1,122 @@
+//variables
+int introChoice, midChoice1, midChoice2, midChoice3;
+int endChoice1,endChoice2,endChoice3;
+string_t name,nom;
+int r =rand();
+
+//6 functions
+void intro(){
+    printf("Please enter a name for one of your characters: "),
+    scanf("%s", &name);
+    printf("Please enter a name for another one of your characters: ");
+    scanf("%s", &nom);
+    printf("Are you even listening to me? %s said, irritated. You came back to reality. You must have zoned out without realizing it and now you’re face to face with %s, your best friend since junior high.\n    Sorry, I got lost in thought, I said as I took a sip of my americano and rubbed your forehead with your fingers, a slight headache but nothing you couldn’t handle. I looked back up at %s, her furrowed brows finally relaxing into her naturally kind looking face as she gushed about this new boy she’s seeing, which is kind of icky to you since you have no interest in dating at the moment but you don’t mind it.So, how is %s? you inquired.\nHe’s great! He’s such a gentleman and super sweet, nothing like the other guys I’ve dated before. I met him on this app called ‘Your Desire Is Our Pleasure’ and the name is so fitting. I couldn’t be happier with him!, she exclaimed.\n  Pause. Your Desire Is Our Pleasure. Really? The developers couldn’t think of a better name? And to boot, you’ve never heard of it in all, %i years of my life. Besides that thought, I was a bit interested in the aspect of finding a date for your office’s annual get together at the local bar to get away from the constant nagging from my senior colleagues and superiors for someone my age so I asked %s what how to download this stupid app.\n    How’d you find this app anyways?I prompted.\n    Well, I was filling out this sketchy questionnaire for one of my statistics courses and there was this pop up that was really bright and interesting so I clicked on it and boom, now I have an awesome boyfriend I can hang out with when my handsome and funny best friend can’t, she claimed with a bright gummy smile.",name,nom,r);
+    
+    printf("make your middle choice: 1, 2, or 3\n");
+    scanf("%i", &introChoice);
+  
+
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+void mid1(){
+    printf("you chose middle 1");
+    printf("Aww stop. It’s not like I don’t want to hang out with you, but you know how things can be at the office, I stated coolly, almost reminiscingly about the times I’ve shared with %s and other friends that haven’t stuck around over the years.\n    So, can I just download it on my phone?\n   Look who’s finally getting into the dating scene, %s said with a more cheeky grin as I pretended not to like the unfamiliar call to attention about that aspect of myself.\n    My company’s office party is coming up, you know, I said in defense, but it could be a good opportunity for me to find someone that I really like.\n    After helping me fill out all the required information, %s and I parted ways so she could meet %s on time and as I started walking towards my car, I got a notification from my roommate that I got a package from a mystery person. Odd. I haven't ordered anything recently, have I? You didn’t think much of it at the time. It was only 11 AM, the right time for an early lunch or brunch, and you haven’t eaten anything besides the snacks they offered at the cafe you just left. Perhaps you can stop by the small diner just a block or two away.",name,nom);
+    printf("make your end choice: 4, 5, or 6\n");
+    while(midChoice1 != 4 && midChoice1 != 5 && midChoice1 != 6){
+        printf("That is not a choice. Please choose '4', '5', or '6'\n");
+        scanf("%i", &midChoice1);
+    }
+}
+void mid2(){
+    printf("you chose middle 2");
+    printf("I make a playful motion to dismiss that thought and grin myself, knowing she meant well by it. I’m only %i, but a little known fact about me is that I was widowed at a young age: cancer, a devastating illness that seemed to come and go as it pleased without remorse. Julia was her name. I grieved her death everyday, but I don’t hold it against anyone for her death and I certainly don’t let it stop me from doing the things I love the most; it feels like something Julia would want for me.\n    And you said that %s and you went on only one date and hit it off instantly?, you asked a little skeptical, knowing how %s likes to bend the truth a lot of the times.\n    Totally. It’s like we were made for each other. He’s my other half I never knew I needed! %s exclaimed gleefully with a sparkle in her eyes, sighing as she wrapped up those memories as only memories.\n   excitement as she’s been pushing me to be more outgoing in my advances in dating, and got up from her seat across from me to the seat right beside me as we began our conquest to fill out the more or less simple requirement space for my new fascination. It soon reached 12 PM and %s and I had other plans, so we decided to wrap things up and see how it goes from here. After splitting the check and having one last goodbye hug, I started walking towards my car when I got a notification from my roommate that I got a package from a mystery person. Well that’s strange.  I haven't ordered anything recently, have I? You didn’t think much of it at the time. I texted them to just leave it on the counter or in your room and got in your car, turning up the volume as you backed out of your parking spot. From your rearview mirror, you noticed a small red flower from where you had parked your car that wasn’t there before: it was a crimson rose.",r,nom, name,name);
+    printf("make your end choice: 7, 8, or 9\n");
+    while(midChoice2 != 7 && midChoice2 != 8 && midChoice2 != 9){
+        printf("That is not a choice. Please choose '7', '8', or '9'\n");
+        scanf("%i", &midChoice2);
+    }
+}
+
+void mid3(){
+    printf("you chose middle 3");
+    printf("I found it amusing that even after all these years, %s hasn’t changed much personality wise. Not that it mattered- she’s always been a kind and loving person who deserves all great things in this world- but she still had a naivety to her that you would hardly see in anyone else. Her innocent and purehearted approach to helping others is something I love about her, even though sometimes that gullibleness gets her into trouble and eventually I or someone else will have to fish her out of it, but it doesn’t happen often enough to fuss over it too much.\n   Do you want to make an account on ‘Your Desire Is Our Pleasure’? she asked, staring pleadingly with her eyes like she always does when she wants something from me.\n   …I don’t see why not, I finally replied after an uncomfortable amount of silence filled the space between each other and seemingly only grew stronger the more she stared me down. She rejoiced and got up from her seat across from me to the seat right beside me as we began our conquest to fill out the more or less simple requirement space for my new fascination. While explaining some of the more nitty gritty details, I remembered a question I forgot to ask %s.\n    So, where was your first date with %s?\n    Oh. Well, if you must know, it was actually down at his cabin in the woods his family owns in Colorado, she answered.\n    Silence went by. Some more silence went by. I looked at her like she had lost her mind, and she probably already had, but you didn’t notice it at first.\n   His cabin? In Colorado? Are you serious? I echoed back.\n   I am, she shot back, still as stubborn as ever.\n   %s, it was your first date and first time ever meeting with this guy. Did you drive all the way to Colorado just to meet this man and stay at his family’s cabin in the woods for the weekend? Are you ok? Do you need help? I grilled her, knowing she would dismiss the matter as a whole but still pushed forward with the question anyways.\n   Yes! I’m fine. I’m a grown woman, Cerian, I know myself and can handle myself pretty well. Wow! Looks like your information is done processing, she exclaimed in an exaggerated manner, clearly annoyed at me.\n	Well I know that, I explained, but I still want to look after you and make sure you're safe. I promised your family that I would when we moved here. I’m not trying to be overbearing, %s, but you know how your parents are. I’m sorry.\n	She hmphed. Not a good sign but not a bad sign either judging by the look on her face when I said I cared.",name,name,nom,name,name);
+
+    printf("make your end choice: 10, 11, or 12\n");
+    while(midChoice3 != 10 && midChoice3 != 11 && midChoice3 != 12){
+        printf("That is not a choice. Please choose '10', '11', or '12'\n");
+        scanf("%i", &midChoice3);
+    }
+}
+
+void end4 (){
+    printf("You chose Ending 1");
+    printf("Finally got home. Looks like my roommate left and put the strange box on the sofa next to the front door, in pristine condition. After setting my things down and settling myself, I took the box’s contents from its cardboard prison and saw: a red rose, a dark violet liquid in a flask with a cork as its lid, and some plain old chalk. There were instructions written in a letter I found at the bottom of the box, but who has time for that? Looking at the rose and elixir, I got an idea. It probably wasn’t a good idea, but no one was around to stop me. Pulling the cork from its place- it was on pretty thoroughly- I placed the rose in the flask with its stem inside the flask, the rose being the perfect size. You didn’t know what to do with the chalk though, so you decided to give it to one of your friends' kids when you see them again. I had completely forgotten about that dating app so I checked it- no results. Guess it wasn’t meant to be, I thought to myself. Maybe it was a miracle %s met %s, or god’s mysterious ways at play. That rose now sits on my window sill, absorbing the purple from inside its container and has also turned into a beautiful purple color rose, but it never seems like the volume of the liquid changes, staying forever half full.", name, nom);
+    exit(1);
+}
+void end5 (){
+    printf("You chose Ending 2");
+    printf("Finally got home. Looks like my roommate left and put the strange box on the kitchen counter like I’d asked, in pristine condition. Before thinking, I brought the box along with my other things into my room and got comfy, too comfy- in the blink of an eye I had fallen asleep in my bed with only the box in my hands, not realizing how exhausted I was, and sat up with the box still in my grasp, not thinking about it much. I opened the box: inside was a red rose, a dark violet liquid in a flask with a cork as its lid, and some plain old chalk, as well as instructions at the very bottom of the cardboard container. After reading through the instructions, I thought it was a joke. Who would believe this? But you knew who would: %s. You sigh as you contemplate your next line of decisions. It was definitely questionable how %s and %s met, but not really for someone like %s",name,nom,name);
+
+    exit(2);
+}
+void end6 (){
+    printf("You chose Ending 3");
+    printf("Finally got home. Looks like my roommate left and put the strange box in my room like I’d asked, in pristine condition. I’m exhausted. After eating and heading down to an archaic arcade to waste time and money on, I headed home with some leftovers and a small teddy bear I won at the claw machine. I completely forgot the box because later on in the day %s called me to complain about %s and how they broke up.", name, nom);
+
+}
+void end7 (){
+    printf("You chose Ending 4");
+    printf("Actually, I changed my mind. I’m good staying single. After shaking the mysterious box a bit, you opened it to find  a red rose, a dark violet liquid in a flask with a cork as its lid, and some plain old chalk, as well as instructions at the very bottom of the cardboard container. Huh, weird. I should leave romance to %s and %s. Anyways, I threw it out and relaxed. Maybe I should adopt a cat...",name,nom);
+}
+void end8 (){
+    printf("You chose Ending 5");
+   printf("   On my way home, I thought to myself, why am I still friends with %s? We’ve had our fair share of good and bad moments, but at this point the worst overrides the better. She’s been with me since Julia died, but even then she seemed distant. I begin to cry as I think of the aspect of losing a close friend or what was a once close friend, and call her once I calm down. Hey Cerian, what’s up? %s said.\n    I don’t want to be friends with you anymore. I hung up after that. Once I got home I looked at the string of messages %s sent me, asking what happened or if %s had to do anything with it, but I didn't have the strength to respond. I saw the box but didn’t open it. All I wanted to do now was cry.",name,name,nom);
+}
+void end9 (){
+    printf("You chose Ending 6");
+    printf("That rose seemed familiar. It looked similar to the roses your parents would keep on their mantle, until our place burned down under circumstances my parents would not tell me. It simply slipped your mind. Anyways, I got home and inspected the strangely white box on the counter. It seemed like it never met the package delivery truck before, but maybe the person hand delivered it themselves? It was strange, so the first person you asked was %s. She said no, she was still out with %s. Odd. ",name,nom);
+
+}
+void end10(){
+    printf("You chose Ending 7");
+    printf("What? After meeting %s in Colorado, you would think they would stay together forever. But this was out of character for even %s; she was usually very confident and independent. You U-turned and headed straight to where they would most likely be: %s’s house. You pull into the driveway to hear the sound of glass breaking and shouting, definitely a big fight. You run up to the door and pound on the door. OPEN THE DOOR! I shouted, and I could hear them stop.",nom,name,name);
+}
+void end11(){
+    printf("You chose Ending 8");
+    printf("Immediately, I head towards %s’s house. No cars. Where would they be? I headed towards the back of the house towards the cellar-%s’s house was the only house in the area with a cellar- and found %s’s truck parked on the gravel. The lock was broken open and Isaw red smudged handprints. I struggled to open the rusty doors, but what I found was horrific.",name,nom);
+
+}
+void end12(){
+    printf("You chose Ending 9");
+    printf("It felt surreal. Once I made it to %s’s house, it was dead silent. No voices shouting at each other, nothing breaking or crying, radio silence. I got out of my car and slammed the door behind me. The only thing rushing through my mind was to find %s. I texted her that I had arrived- no response, but my message was read. I walked towards her front porch and looked through the window, trying to see if %s or %s was there, but I didn’t see anything, but I did see a rose as red as blood. I was too focused on the flower to notice the sound of gravel crunching beneath the weight of someone as they made their way towards me.",name,name,nom);
+
+}
+
+
+int main (){ //main program to run (logic)
+    intro();
+    if (1 == introChoice);{
+        mid1 ();{
+            if(4==midChoice1){
+            }
+            if(5==midChoice1){
+            }
+            if(6==midChoice1){
+            }
+        }
+    }
+        return(0);
+
+            }
+        
+    if(2 == introChoice);{
+            mid2 ();
+        }
+        
+    if (3== introChoice){
+        mid3 ();
+        
+    }
